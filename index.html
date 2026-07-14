@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Nikel — Fachinformatiker für Anwendungsentwicklung & Fullstack Developer</title>
+<meta name="description" content="Portfolio von Alexander Nikel — Fachinformatiker für Anwendungsentwicklung (IHK) & Fullstack Developer aus NRW.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="pictures/online-resume.ico">
+</head>
+<body>
+
+<div id="bg-tint"></div>
+<div class="grain"></div>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-inner">
+    <a href="#top" class="logo">AN<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#stack" class="nav-link">Stack</a>
+      <a href="#projekte" class="nav-link">Projekte</a>
+      <a href="#about" class="nav-link">Über mich</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="#kontakt" class="pill-badge">
+      Verfügbar für Bewerbungen
+      <span class="status-dot"></span>
+    </a>
+    <button id="menuBtn" class="menu-btn" aria-label="Menü öffnen">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#stack">Stack</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#about">Über mich</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero">
+  <canvas id="grid"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow">Portfolio — Marienheide / NRW, Deutschland</p>
+    <h1 class="hero-title">
+      Fachinformatiker<br>
+      für <span class="gradient-text">Anwendungs&shy;entwicklung</span>
+    </h1>
+    <p class="hero-subtitle">&amp; Fullstack Developer</p>
+    <p class="hero-text">
+      IHK-zertifiziert seit Juni 2026. Ich baue durchdachte Web-Anwendungen — von der Datenbank bis zum letzten Pixel — und liebe es, Probleme sauber zu Ende zu lösen statt sie nur zu umschiffen.
+    </p>
+    <div class="hero-actions">
+      <a href="#projekte" class="btn btn-solid">Projekte ansehen</a>
+      <a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECH STACK ============ -->
+<section id="stack" class="section">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <h2 class="section-title">Tech-Stack</h2>
+      <p class="section-lead">Werkzeuge, mit denen ich täglich arbeite — vom Interface bis zur Datenbank.</p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Frontend -->
+      <div class="bento-card reveal">
+        <div class="bento-head">
+          <span class="dot-marker" style="background:#7C5CFF"></span>
+          <h3>Frontend</h3>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill" data-accent="#7C5CFF">React</span>
+          <span class="tech-pill" data-accent="#7C5CFF">Redux</span>
+          <span class="tech-pill" data-accent="#7C5CFF">JavaScript (ES6+)</span>
+          <span class="tech-pill" data-accent="#7C5CFF">HTML5</span>
+          <span class="tech-pill" data-accent="#7C5CFF">CSS3</span>
+          <span class="tech-pill" data-accent="#7C5CFF">Tailwind CSS</span>
+          <span class="tech-pill" data-accent="#7C5CFF">Blazor</span>
+          <span class="tech-pill" data-accent="#7C5CFF">WPF / XAML</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="bento-card reveal" style="transition-delay:.08s">
+        <div class="bento-head">
+          <span class="dot-marker" style="background:#6FE3D9"></span>
+          <h3>Backend</h3>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill" data-accent="#6FE3D9">C# / .NET</span>
+          <span class="tech-pill" data-accent="#6FE3D9">ASP.NET Core</span>
+          <span class="tech-pill" data-accent="#6FE3D9">Node.js / Express</span>
+          <span class="tech-pill" data-accent="#6FE3D9">Python</span>
+          <span class="tech-pill" data-accent="#6FE3D9">PostgreSQL</span>
+          <span class="tech-pill" data-accent="#6FE3D9">SQLite</span>
+          <span class="tech-pill" data-accent="#6FE3D9">Supabase</span>
+          <span class="tech-pill" data-accent="#6FE3D9">WCF</span>
+        </div>
+      </div>
+
+      <!-- Tools/Design -->
+      <div class="bento-card reveal" style="transition-delay:.16s">
+        <div class="bento-head">
+          <span class="dot-marker" style="background:#FF9F5C"></span>
+          <h3>Design &amp; Tools</h3>
+        </div>
+        <div class="pill-group">
+          <span class="tech-pill" data-accent="#FF9F5C">Git &amp; GitHub</span>
+          <span class="tech-pill" data-accent="#FF9F5C">VS Code</span>
+          <span class="tech-pill" data-accent="#FF9F5C">Visual Studio</span>
+          <span class="tech-pill" data-accent="#FF9F5C">Auth0</span>
+          <span class="tech-pill" data-accent="#FF9F5C">Stripe</span>
+          <span class="tech-pill" data-accent="#FF9F5C">NUnit</span>
+          <span class="tech-pill" data-accent="#FF9F5C">Postman</span>
+          <span class="tech-pill" data-accent="#FF9F5C">Figma</span>
+          <span class="tech-pill pending" data-accent="#FF9F5C" title="Agile Scrum Foundation Level — Prüfung aktuell in Abschluss">Scrum <span class="pending-label">(in Abschluss)</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJEKTE ============ -->
+<section id="projekte" class="section">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <h2 class="section-title">Projekte</h2>
+      <p class="section-lead">Eine Auswahl an Arbeiten aus Ausbildung, Schule und Freizeit.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- 1. TlCopilot -->
+      <article class="project-card reveal" style="--accent:#6FE3D9">
+        <div class="project-glow"></div>
+        <div class="project-media">
+          <span class="project-mono">Tl</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>TlCopilot — Case Study</h3>
+            <span class="tag-badge">IHK-Projekt</span>
+          </div>
+          <p class="project-desc">
+            Mein IHK-Abschlussprojekt: eine WPF-Desktop-Anwendung (C#/.NET), die den manuellen Datenabgleich zwischen einem ERP- und einem MES-System teilautomatisiert — über vier priorisierte FIFO-Warteschlangen mit Preemption. Ergebnis: 42 % ROI und rund 8,5 Monate Amortisationszeit.
+          </p>
+          <div class="tech-tags">
+            <span>C# / .NET</span><span>WPF · MVVM</span><span>WCF</span><span>PostgreSQL</span><span>NUnit</span>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-disabled" title="Repo ist aktuell privat — Freigabe durch ENOTEC steht noch aus">Live-Demo folgt</span>
+            <span class="btn btn-ghost btn-disabled" title="Privates Repository — Freigabe durch Arbeitgeber ausstehend">GitHub · privat</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. SteamPriceTracker -->
+      <article class="project-card reveal" style="--accent:#5CA8FF">
+        <div class="project-glow"></div>
+        <div class="project-media">
+          <span class="project-mono">$</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Steam Price Tracker</h3>
+            <span class="tag-badge">Schulprojekt</span>
+          </div>
+          <p class="project-desc">
+            Python-Konsolenanwendung, die Steam-Preise ausgewählter Spiele über die inoffizielle Store-API überwacht, Preisänderungen gegen eine SQLite-Historie prüft und bei Änderungen automatisch per Telegram-Bot benachrichtigt.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span><span>SQLite</span><span>Steam API</span><span>Telegram Bot API</span>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-disabled" title="Konsolenanwendung ohne Web-Oberfläche">Kein Live-Demo · CLI</span>
+            <a href="https://github.com/VampireNoob/Steam-Price-Tracker" target="_blank" rel="noopener" class="btn btn-ghost btn-accent">
+              GitHub
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. GTAGarageManager -->
+      <article class="project-card reveal" style="--accent:#FF5C8A">
+        <div class="project-glow"></div>
+        <div class="project-media">
+          <span class="project-mono">GTA</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>GTA Garage Manager</h3>
+            <span class="tag-badge">Hobby</span>
+          </div>
+          <p class="project-desc">
+            Blazor-Server-Anwendung zur Verwaltung einer virtuellen Fahrzeug-Garage mit Supabase als Datenbank-Backend. Live gehostet mit eigenem SSL-Zertifikat via Let's Encrypt, inklusive gelöstem Cookie-/HTTPS-Problem bei mobilem Login.
+          </p>
+          <div class="tech-tags">
+            <span>Blazor Server</span><span>C#</span><span>Supabase</span><span>Let's Encrypt</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://gtagaragemanager.runasp.net" target="_blank" rel="noopener" class="btn btn-solid">
+              Live-Demo
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <a href="https://github.com/VampireNoob/GTAGarageManager" target="_blank" rel="noopener" class="btn btn-ghost btn-accent">
+              GitHub
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Nerd's Computer Shop -->
+      <article class="project-card reveal" style="--accent:#C9A66B">
+        <div class="project-glow"></div>
+        <div class="project-media">
+          <span class="project-mono">NC</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Nerd's Computer Shop</h3>
+            <span class="tag-badge">E-Commerce</span>
+          </div>
+          <p class="project-desc">
+            Vollständiger Online-Shop mit React &amp; Redux: Nutzer-Authentifizierung über Auth0, echte Stripe-Zahlungsabwicklung über ein separates Node/Express-Backend sowie ein gestaffeltes Rabattsystem (5–15 % je nach Bestellwert).
+          </p>
+          <div class="tech-tags">
+            <span>React</span><span>Redux</span><span>Auth0</span><span>Stripe</span><span>Node / Express</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://nerd-s-computershop.netlify.app" target="_blank" rel="noopener" class="btn btn-solid">
+              Live-Demo
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <a href="https://github.com/VampireNoob/Nerd-s-ComputerShop" target="_blank" rel="noopener" class="btn btn-ghost btn-accent">
+              GitHub
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Fox-Online-Shop -->
+      <article class="project-card reveal" style="--accent:#FF9F5C">
+        <div class="project-glow"></div>
+        <div class="project-media">
+          <span class="project-mono">🦊</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Fox Online Shop</h3>
+            <span class="tag-badge">E-Commerce</span>
+          </div>
+          <p class="project-desc">
+            Kinderfreundlicher Online-Shop für Videospiele ("GamerFox") mit React, Nutzer-Login und echter Stripe-Zahlungsintegration. Inklusive behobener Sicherheitslücke (Preismanipulation) durch serverseitige Preisberechnung.
+          </p>
+          <div class="tech-tags">
+            <span>React</span><span>Redux</span><span>Auth0</span><span>Stripe</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://fox-online-shop.netlify.app" target="_blank" rel="noopener" class="btn btn-solid">
+              Live-Demo
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <a href="https://github.com/VampireNoob/Fox-Online-Shop" target="_blank" rel="noopener" class="btn btn-ghost btn-accent">
+              GitHub
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Playground Hub -->
+      <article class="project-card reveal" style="--accent:#A8FF5C">
+        <div class="project-glow"></div>
+        <div class="project-media">
+          <span class="project-mono">PH</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Playground Hub</h3>
+            <span class="tag-badge">Sammlung</span>
+          </div>
+          <p class="project-desc">
+            Interaktive Übersichtsseite (Flip-Cards) für kleinere Übungsprojekte und Canvas-Spiele — u. a. Café in Paris, Nutrition Facts, Familien-Rezepte und mehrere JS-Games. Ein fortlaufend wachsendes Sammelbecken für Experimente.
+          </p>
+          <div class="tech-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Canvas API</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://vampirenoob.github.io/Playground-Hub/" target="_blank" rel="noopener" class="btn btn-solid">
+              Live-Demo
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+            <a href="https://github.com/VampireNoob/Playground-Hub" target="_blank" rel="noopener" class="btn btn-ghost btn-accent">
+              GitHub
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT & EDUCATION ============ -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <div class="about-intro reveal">
+      <h2 class="section-title">Über mich</h2>
+        <p class="about-text">
+          Ich bin Alexander — frisch zertifizierter Fachinformatiker für Anwendungsentwicklung mit einem Faible für sauberen Code und durchdachte Architektur. 
+          Meine Reise begann autodidaktisch: 2022 bis 2024 habe ich mir über zertifizierte Kurse bei CanSheCode Inc. (Montreal, Kanada) die Grundlagen der 
+          Webentwicklung beigebracht. Von Oktober 2024 bis Juni 2026 folgte dann meine Umschulung bei der GFN Köln, im praktischen Teil davon bei der ENOTEC GmbH 
+          in Marienheide, wo ich mein Abschlussprojekt TlCopilot entwickelt habe: eine WPF-Anwendung, die einen bislang manuellen ERP-MES-Abgleich automatisiert. 
+          Neben der Ausbildung baue ich kontinuierlich an eigenen Projekten — von E-Commerce-Shops bis zu kleinen Tools — um mein Handwerk zu schärfen. 
+          Aktuell suche ich eine Einstiegsposition als Fullstack- oder Anwendungsentwickler in NRW. Aktuell suche ich eine Einstiegsposition als Fullstack- oder Anwendungsentwickler in NRW, 
+          während ich parallel meine Zertifizierung als Agile Scrum Foundation Level abschließe.
+        </p>
+    </div>
+
+    <div class="timeline" id="timelineWrap">
+      <div class="timeline-line">
+        <div class="timeline-fill" id="timelineFill"></div>
+      </div>
+      <div class="timeline-items">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2022 – 2024 · CanSheCode Inc., Montreal (Kanada)</p>
+            <h3>Autodidaktischer Einstieg in die Webentwicklung</h3>
+            <p>Mehrere zertifizierte Online-Kurse (die im Durchschnitt ca. 15 Wochen dauerten) in HTML/CSS, JavaScript, Bootstrap, GSAP, Figma, React &amp; Redux sowie Node.js — die Grundlage, bevor die Umschulung überhaupt begann.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <p class="timeline-date">21.10.2024 – 20.10.2025 · GFN Köln</p>
+                <h3>Start der Umschulung zum Fachinformatiker für Anwendungsentwicklung</h3>
+                <p>Basis-, Kern- und Fachqualifikationen: von Netzwerken, Clients und Datenverwaltung bis zur Gestaltung von Benutzerschnittstellen und kundenspezifischer Anwendungsentwicklung. Vertiefungen in Datenbanken/SQL, objektorientierter Programmierung mit Java, HTML/CSS sowie Python (PCEP Entry-Level) — begleitet von Bewerbungstraining und Projektmanagement-Grundlagen.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <p class="timeline-date">21.10.2025 – 30.06.2026 · Praxisphase</p>
+            <h3>Praktikum bei ENOTEC GmbH, Marienheide</h3>
+            <p>Betreut von Andreas Schellewald. Entwicklung von TlCopilot: priorisierte FIFO-Warteschlangen, WCF- und PostgreSQL-Anbindung, automatisierte Tests (NUnit).</p>
+        </div>
+        </div>
+
+        <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <p class="timeline-date">30.06.2026 · IHK Köln</p>
+            <h3>Abschlussprüfung erfolgreich bestanden</h3>
+            <p>Zertifizierter Fachinformatiker für Anwendungsentwicklung (FIAE), inklusive Präsentation und Fachgespräch zum Projekt TlCopilot. Zusätzlich aktuell in Abschluss: Agile Scrum Foundation Level.</p>
+        </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">Aktuell</p>
+            <h3>Portfolio-Ausbau &amp; aktive Jobsuche</h3>
+            <p>Fokus auf Einstiegspositionen als Fullstack- oder Anwendungsentwickler in NRW — begleitet von der Agentur für Arbeit.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="kontakt" class="section">
+  <div class="section-inner">
+    <div class="contact-grid reveal">
+      <div>
+        <h2 class="section-title">Lass uns<br>reden.</h2>
+        <p class="contact-lead">
+          Ich freue mich über Anfragen zu Einstiegspositionen, Praktika oder einfach einem Austausch über Code. Schreib mir gern direkt oder schau auf meinen Profilen vorbei.
+        </p>
+        <a href="mailto:kontakt@example.com" class="email-link">
+          kontakt@example.com
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <p class="placeholder-note">Platzhalter — bitte durch echte Adresse ersetzen</p>
+      </div>
+
+      <div class="social-list">
+        <a href="https://github.com/VampireNoob" target="_blank" rel="noopener" class="social-link">
+          <span class="social-left">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.32-1.28-1.67-1.28-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+            <span>GitHub</span>
+          </span>
+          <span class="social-right">@VampireNoob</span>
+        </a>
+
+        <a href="#" data-social="linkedin" target="_blank" rel="noopener" class="social-link">
+          <span class="social-left">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            <span>LinkedIn</span>
+          </span>
+          <span class="social-right">Link folgt</span>
+        </a>
+
+        <a href="#" data-social="xing" target="_blank" rel="noopener" class="social-link">
+          <span class="social-left">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.19 3H14.5c-.24 0-.4.13-.49.34l-4.93 8.7 3.14 5.62c.09.18.25.34.49.34h3.7c.16 0 .29-.07.36-.19a.4.4 0 0 0 0-.4l-3.11-5.5 4.9-8.6a.4.4 0 0 0 0-.4.4.4 0 0 0-.37-.19zM8.02 8.16H4.3c-.16 0-.3.08-.37.2a.4.4 0 0 0 0 .4l1.6 2.82-2.5 4.4a.4.4 0 0 0 0 .4c.07.12.2.2.36.2h3.71c.24 0 .4-.13.49-.33l2.53-4.46-1.6-2.83a.55.55 0 0 0-.5-.3z"/></svg>
+            <span>Xing</span>
+          </span>
+          <span class="social-right">Link folgt</span>
+        </a>
+
+        <a href="https://www.instagram.com/vampirenoob/" target="_blank" rel="noopener" class="social-link">
+          <span class="social-left">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <span>Instagram</span>
+          </span>
+          <span class="social-right">@vampirenoob</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© <span id="year"></span> Alexander Nikel</p>
+    <div class="footer-links">
+      <button data-modal-open="impressum">Impressum</button>
+      <button data-modal-open="datenschutz">Datenschutz</button>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODALS ============ -->
+<div id="modal-impressum" class="modal">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>Impressum</h3>
+      <button data-modal-close class="modal-close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-text">
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+      <p>
+        Alexander Nikel<br>
+        [Straße Hausnummer]<br>
+        [PLZ Ort]<br>
+        Deutschland
+      </p>
+      <p><strong>Kontakt</strong><br>
+        E-Mail: [E-Mail-Adresse]<br>
+        Telefon: [optional]
+      </p>
+      <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong><br>
+        Alexander Nikel, Anschrift wie oben.
+      </p>
+      <p class="modal-hint">Platzhalter in eckigen Klammern bitte vor Veröffentlichung durch echte Angaben ersetzen.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-datenschutz" class="modal">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>Datenschutzerklärung</h3>
+      <button data-modal-close class="modal-close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="modal-text">
+      <p><strong>1. Verantwortlicher</strong><br>
+      Alexander Nikel, [Anschrift siehe Impressum], [E-Mail-Adresse]</p>
+
+      <p><strong>2. Hosting</strong><br>
+      Diese Website wird bei [Hosting-Anbieter, z. B. GitHub Pages / GitHub Inc.] gehostet. Beim Aufruf der Seite verarbeitet der Anbieter automatisch technische Server-Logdaten (z. B. IP-Adresse, Datum/Uhrzeit, aufgerufene Seite), um die Auslieferung technisch zu ermöglichen. Details entnehmen Sie der Datenschutzerklärung des Anbieters.</p>
+
+      <p><strong>3. Keine Formulare, kein Tracking</strong><br>
+      Diese Seite enthält kein Kontaktformular und keine Analyse- oder Tracking-Tools. Es werden keine Cookies zu Marketing- oder Analysezwecken gesetzt.</p>
+
+      <p><strong>4. Externe Links</strong><br>
+      Verlinkte Profile (GitHub, LinkedIn, Xing, Instagram) führen zu Angeboten Dritter, für deren Datenschutzpraxis die jeweiligen Anbieter selbst verantwortlich sind.</p>
+
+      <p><strong>5. Ihre Rechte</strong><br>
+      Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie ein Beschwerderecht bei einer Aufsichtsbehörde.</p>
+
+      <p class="modal-hint">Platzhalter bitte vor Veröffentlichung prüfen und an den tatsächlichen Hosting-Anbieter anpassen.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
