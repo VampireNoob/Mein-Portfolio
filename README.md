@@ -4,7 +4,7 @@ Personal one-page portfolio website — built from scratch with pure HTML5, CSS3
 
 ## Live Demo
 
-🔗 [View live](https://github.com/VampireNoob/Mein-Portfolio/)
+🔗 [View live](https://vampirenoob.github.io/Mein-Portfolio/)
 
 ![Portfolio Screenshot](pictures/portfolio.png)
 
