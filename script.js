@@ -68,6 +68,9 @@ function drawGrid() {
   ctx.clearRect(0, 0, w, h);
   const cols = Math.ceil(w / GRID_SPACING) + 1;
   const rows = Math.ceil(h / GRID_SPACING) + 1;
+  const crossSize = 3 * devicePixelRatio;
+  const accent = { r: 201, g: 120, b: 79 };
+  const base = { r: 244, g: 236, b: 226 };
 
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
@@ -78,19 +81,29 @@ function drawGrid() {
       const dy = y - mouse.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
 
+      let proximity = 0;
       if (dist < MAX_DIST) {
         const force = (1 - dist / MAX_DIST) * MAX_OFFSET;
         const angle = Math.atan2(dy, dx);
         x -= Math.cos(angle) * force;
         y -= Math.sin(angle) * force;
+        proximity = 1 - dist / MAX_DIST;
       }
 
-      const alpha = dist < MAX_DIST ? 0.5 - (dist / MAX_DIST) * 0.35 : 0.15;
+      const alpha = dist < MAX_DIST ? 0.55 - (dist / MAX_DIST) * 0.4 : 0.14;
+      const size = crossSize + proximity * crossSize * 1.2;
+      const r = Math.round(base.r + (accent.r - base.r) * proximity);
+      const g = Math.round(base.g + (accent.g - base.g) * proximity);
+      const b = Math.round(base.b + (accent.b - base.b) * proximity);
 
+      ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+      ctx.lineWidth = devicePixelRatio;
       ctx.beginPath();
-      ctx.arc(x, y, 1.4 * devicePixelRatio, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(244, 244, 247, ${alpha})`;
-      ctx.fill();
+      ctx.moveTo(x - size, y);
+      ctx.lineTo(x + size, y);
+      ctx.moveTo(x, y - size);
+      ctx.lineTo(x, y + size);
+      ctx.stroke();
     }
   }
   requestAnimationFrame(drawGrid);
